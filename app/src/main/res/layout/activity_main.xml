@@ -47,7 +47,7 @@
                 />
 
             <EditText
-                android:drawableRight="@drawable/mail"
+                android:drawableLeft="@drawable/mail"
                 android:inputType="textEmailAddress"
                 style="@style/edit_20"
                 android:layout_marginTop="@dimen/_40sdp"
@@ -55,18 +55,46 @@
                 android:layout_below="@id/main_logn"
                 android:hint="Enter Email id"/>
 
-            <EditText
-                android:drawableRight="@drawable/key"
-                android:inputType="textPassword"
-                style="@style/edit_20"
-                android:layout_marginTop="@dimen/_10sdp"
-                android:id="@+id/main_password"
+            <FrameLayout
+                android:id="@+id/Framlayout"
                 android:layout_below="@id/main_email"
-                android:hint="Enter Password"/>
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:drawableLeft="@drawable/key"
+                    android:inputType="textPassword"
+                    style="@style/edit_20"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:id="@+id/main_password"
+                    android:layout_below="@id/main_email"
+                    android:hint="Enter Password"/>
+                <ImageView
+                    android:visibility="gone"
+                    android:id="@+id/main_show"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:layout_gravity="end|center"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:src="@drawable/show"/>
+                <ImageView
+                    android:id="@+id/main_hide"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:layout_gravity="end|center"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:src="@drawable/hide"/>
+
+
+            </FrameLayout>
+
+
 
             <Button
+                app:backgroundTint="@null"
+                android:background="@drawable/custom_button"
                 android:id="@+id/main_button"
-                android:layout_below="@id/main_password"
+                android:layout_below="@id/Framlayout"
                 android:layout_marginTop="@dimen/_30sdp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

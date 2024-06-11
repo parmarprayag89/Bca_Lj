@@ -1,10 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/_20sdp"
     tools:context=".SingupActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <EditText
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:id="@+id/singup_name"
+        android:text="Enter Name "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:id="@+id/singup_email"
+        android:text="Enter Email ID "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:id="@+id/singup_contact"
+        android:text="Enter Contact no "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:id="@+id/singup_pass"
+        android:text="Enter Password "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:id="@+id/singup_confirmpass"
+        android:text="Enter Confirm Password "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        app:backgroundTint="@null"
+        android:background="@drawable/custom_button"
+        android:id="@+id/singup_button"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SingUp"
+        android:textSize="20dp"
+        android:layout_marginHorizontal="30dp"/>
+
+</LinearLayout>
